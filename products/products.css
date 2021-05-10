@@ -92,3 +92,15 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.all-images {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin-left: 10px;
+}
