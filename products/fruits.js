@@ -1,7 +1,7 @@
 const cherry = {
     id: 'cherry',
     name: 'Rainier Cherry',
-    image: 'rainier-cherry.jpeg',
+    image: 'rainier-cherry.webp',
     description: 'Sweet with a thin skin and thick creamy-yellow flesh!',
     category: 'tree-fruit',
     price: 1,
@@ -43,13 +43,23 @@ const watermelon = {
     price: 7,
     cost: 3
 };
+const greenApple = {
+    id: 'greenApple',
+    name: 'Green Apple',
+    image: 'greenApple.jpg',
+    description: 'Tart and juicy!',
+    category: 'tree-fruit',
+    price: 2,
+    cost: 1
+};
 
 const fruits = [
     cherry,
     mango,
     strawberry,
     guava,
-    watermelon
+    watermelon,
+    greenApple
 ];
 
 export default fruits;

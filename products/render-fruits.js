@@ -2,6 +2,7 @@ export default { renderFruits };
 export function renderFruits(fruit) {
     const li = document.createElement('li');
     li.classList.add(fruit.category);
+    li.classList.add('box');
     li.title = fruit.description;
 
     const h3 = document.createElement('h3');
