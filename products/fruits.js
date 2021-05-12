@@ -1,5 +1,5 @@
 const cherry = {
-    id: 'cherry',
+    id: 1,
     name: 'Rainier Cherry',
     image: 'rainier-cherry.webp',
     description: 'Sweet with a thin skin and thick creamy-yellow flesh!',
@@ -8,7 +8,7 @@ const cherry = {
     cost: 0.25
 };
 const mango = {
-    id: 'mango',
+    id: 2,
     name: 'Mango',
     image: 'mango.jpg',
     description: 'Soft and juicy, pale orange in colour, and has a texture ranging from fibrous to almost the consistency of butter.',
@@ -17,7 +17,7 @@ const mango = {
     cost: 1
 };
 const strawberry = {
-    id: 'strawberry',
+    id: 3,
     name: 'Strawberry',
     image: 'strawberry.jpeg',
     description: 'Widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.',
@@ -26,7 +26,7 @@ const strawberry = {
     cost: 1
 };
 const guava = {
-    id: 'guava',
+    id: 4,
     name: 'Guava',
     image: 'guava.jpeg',
     description: 'Tropical fruit with a yellow skin color and flesh that can either be white, pink, or dark red. Tastes fruity and slightly floral.',
@@ -35,7 +35,7 @@ const guava = {
     cost: 2
 };
 const watermelon = {
-    id: 'watermelon',
+    id: 5,
     name: 'Watermelon',
     image: 'watermelon.jpeg',
     description: 'Bright pink rind, striped green exterior and dark seeds speckled throughout. Sweet and fruity, but not strong tasting because it/s mostly water.',
@@ -44,7 +44,7 @@ const watermelon = {
     cost: 3
 };
 const greenApple = {
-    id: 'greenApple',
+    id: 5,
     name: 'Green Apple',
     image: 'greenApple.jpg',
     description: 'Tart and juicy!',
