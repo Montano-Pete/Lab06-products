@@ -10,14 +10,14 @@ export function renderCartItem(cartItem) {
     const priceTd = document.createElement('td');
     const totalTd = document.createElement('td');
 
-    nameTd.textContent = fruits.name;
+    nameTd.textContent = fruitCart.name;
     quantityTd.textContent = cartItem.quantity;
-    priceTd.textContent = fruits.price.toLocaleString('en-US', {
+    priceTd.textContent = fruitCart.price.toLocaleString('en-US', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'USD'
     });
 
-    const total = fruits.price * cartItem.quantity;
+    const total = fruitCart.price * cartItem.quantity;
 
     totalTd.textContent = total.toLocaleString('en-US', {
         style: 'currency',
@@ -27,7 +27,6 @@ export function renderCartItem(cartItem) {
     tr.append(nameTd, quantityTd, priceTd, totalTd);
 
     return tr;
-
 };
 
 export function getCartTotal() {

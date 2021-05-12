@@ -44,7 +44,7 @@ const watermelon = {
     cost: 3
 };
 const greenApple = {
-    id: 5,
+    id: 6,
     name: 'Green Apple',
     image: 'greenApple.jpg',
     description: 'Tart and juicy!',

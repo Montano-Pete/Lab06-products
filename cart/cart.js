@@ -10,9 +10,9 @@ for (let item of cartItems) {
     anchor.append(tableRow);
 }
 
-const totalPrice = getCartTotal();
+const totalPrice = getCartTotal(cartItems);
 
 total.textContent = totalPrice.toLocaleString('en-US', {
-    style: 'curreny',
+    style: 'currency',
     currency: 'USD'
 });
