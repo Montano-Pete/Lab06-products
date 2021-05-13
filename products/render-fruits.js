@@ -1,3 +1,6 @@
+import { addItemToCart } from '../local-storage.js';
+import fruits from './fruits.js';
+
 export default { renderFruits };
 export function renderFruits(fruit) {
     const li = document.createElement('li');
@@ -24,6 +27,14 @@ export function renderFruits(fruit) {
     button.value = 'Add';
     button.classList.add('button');
     p.appendChild(button);
+
+    button.addEventListener('click', () => {
+        addItemToCart(fruits.id);
+
+    
+    
+    
+    });
 
     li.appendChild(p);
     return li;
