@@ -52,7 +52,6 @@ const greenApple = {
     price: 2,
     cost: 1
 };
-
 const fruits = [
     cherry,
     mango,

@@ -1,7 +1,6 @@
-
-export function findById(someArray, id) {
+export function findById(someArray, ID) {
     for (let item of someArray) {
-        if (id === item.id) {
+        if (ID === item.id) {
             return item;
         }
     }

@@ -1,23 +1,25 @@
 import fruits from '../products/fruits.js';
-import { cartItems } from '../cart-items.js';
+// import { getCart } from '../local-storage.js';
 import { findById } from '../utils.js';
 
-export function renderCartItem(cartItem) {
-    const fruitCart = findById(fruits, cartItem.id);
+// const cartItems = getCart();
+// console.log(cartItems);
+export function renderCartItem(cartItems) {
+    const fruitCart = findById(fruits, cartItems.id);
     const tr = document.createElement('tr');
     const nameTd = document.createElement('td');
     const quantityTd = document.createElement('td');
     const priceTd = document.createElement('td');
     const totalTd = document.createElement('td');
-
+// console.log(fruitCart);
     nameTd.textContent = fruitCart.name;
-    quantityTd.textContent = cartItem.quantity;
+    quantityTd.textContent = cartItems.quantity;
     priceTd.textContent = fruitCart.price.toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD'
     });
 
-    const total = fruitCart.price * cartItem.quantity;
+    const total = fruitCart.price * cartItems.quantity;
 
     totalTd.textContent = total.toLocaleString('en-US', {
         style: 'currency',
@@ -29,10 +31,10 @@ export function renderCartItem(cartItem) {
     return tr;
 };
 
-export function getCartTotal() {
+export function getCartTotal(cartItemTotals) {
     let accumulator = 0;
 
-    for (let item of cartItems) {
+    for (let item of cartItemTotals) {
         const fruitCartTotal= findById(fruits, item.id);
 
         const total = item.quantity * fruitCartTotal.price;

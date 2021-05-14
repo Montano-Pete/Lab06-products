@@ -25,7 +25,7 @@ export function addItemToCart(itemId) {
     if (cartItem) {
         cartItem.quantity++;
     } else {
-        const newCartItem = { id: itemId, quantity:1 };
+        const newCartItem = { id: itemId, quantity: 1 };
         cart.push(newCartItem);
     }
 
